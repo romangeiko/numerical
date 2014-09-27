@@ -7,7 +7,7 @@
     h=(b-a)/(n-1)
     do 2, k=1, n
     x(k)=a+h*(k-1)
-    y(k)=(x(k))*2
+    y(k)=(x(k))**3
 2   continue
 
     do 1, i=1, N-3, 4
@@ -15,7 +15,7 @@
 1   continue
     analiterror=(h**5)*(b-a)*3/80
     s=s*3/8
-    anint=(2**3)/3
+    anint=(2**4)/4
     facterror=abs(s-anint)
     print *, s
     print *, anint
